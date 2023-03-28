@@ -66,31 +66,81 @@ code {
 }
 
 .linkedin-logo, .email-logo, .github-logo {
-  width: 1vw;
+  width: 25px;
+  padding: 0px 5px;
 }
 
 .site-logos {
-  width: 8vw;
+  width: 200px;
 }
 
 .me {
-  border-radius:10%;
+  border-radius: 10%;
+  margin: 2rem 2rem 2rem 0px;
+}
+
+h2 {
+  font-size: 2.5rem ;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 .about-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  padding: 1.2rem 30vw;
+}
+
+.about-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 1100px;
+}
+
+.skills {
+  padding-left: 0%;
+}
+
+.skills > li {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 0.45em 0.75em;
+  margin: 0.4em 0.1em
+  /* border-radius: 3px; */
+}
+
+.resume {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.featured-projects {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .projects-container {
   display: flex;
-  flex-direction: row;
-  margin: 0vh 25vw;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0vh 30vw;
 }
 
 .contact {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }

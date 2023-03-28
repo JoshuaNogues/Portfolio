@@ -52,23 +52,38 @@ const Home = () => {
           beautiful interfaces, web apps, and everything in between!
         </p>
       </div>
-      <div className="about-container">
+      <div className="about-container" id="about">
         <div className="about-and-image">
           <h2>About Me</h2>
           <img className="me" src={me} alt="profile-pic"/>
         </div>  
-        <div>    
-        <h3>I love building stuff</h3>
+        <div className="about-caption">  
+          <ul className="skills">
+            <li>Javascript</li>
+            <li>React</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>CSS</li>
+            <li>Node.js</li>
+            <li>HTML</li>
+            <li>Flexbox</li>
+            <li>Bootstrap</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>NPM</li>
+          </ul>  
+        <h3>I love building stuff 📱</h3>
         <p>
           I started playing with computers at a very young age. Since then I
           have been experimenting with all sorts of technologies that in some way or
-          another led me to work on engineering. Including photography, music, sound
+          another led me to work on software engineering. Including photography, music, sound
           engineering, 2d games and more!
         </p>
+        <p className="resume">Click here to download my resume</p>
         </div> 
       </div>
-        <h2>Featured Projects</h2>
-      <div className="projects-container">
+      <div className="projects-container" id="projects">
+        <h2 className="featured-projects">Featured Projects</h2>
         <div className="ironsocial">
           <h3>IronSocial</h3>
           <img
@@ -115,11 +130,11 @@ const Home = () => {
         </p>
         </div>
       </div>
-      <div className="contact">
+      <div className="contact" id="contact">
         <h2>Contact Me</h2>
         <p>joshuanogues@outlook.com</p>
       </div>
-      <div>
+      <div className="footer">
       <img
           className="github-logo"
           src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
