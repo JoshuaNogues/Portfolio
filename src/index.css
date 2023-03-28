@@ -13,7 +13,6 @@ code {
 }
 
 .navbar {
-  width: 100%;
   height: 60px;
   display: flex;
   justify-content: space-around;
@@ -67,9 +66,31 @@ code {
 }
 
 .linkedin-logo, .email-logo, .github-logo {
-  width: 2vw;
+  width: 1vw;
+}
+
+.site-logos {
+  width: 8vw;
 }
 
 .me {
   border-radius:10%;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0vh 25vw;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import me from '../images/me.png'
+import is from '../images/is.png'
+import rev from '../images/rev.png'
+import alien from '../images/alien.png'
 
 const Typewriter = ({ text, loop }) => {
   const [currentText, setCurrentText] = useState("");
@@ -49,8 +52,8 @@ const Home = () => {
           beautiful interfaces, web apps, and everything in between!
         </p>
       </div>
-      <div className="about">
-        <div>
+      <div className="about-container">
+        <div className="about-and-image">
           <h2>About Me</h2>
           <img className="me" src={me} alt="profile-pic"/>
         </div>  
@@ -64,20 +67,31 @@ const Home = () => {
         </p>
         </div> 
       </div>
-      <div className="projects">
-        <h2>Projects</h2>
-        <h3>IronSocial</h3>
-        <p>
-          IronSocial is a social media application built with React, Express,
-          and MongoDB, modeled after LinkedIn, designed specifically for
-          IronHackers to collaborate and network. The platform allows
-          IronHackers to post about their current employment, share job
-          opportunities, and offer tips on job hunting, interviews, and related
-          topics. The app aims to foster a deeper sense of community among
-          IronHackers, enabling them to connect and support each other's career
-          goals.
-        </p>
+        <h2>Featured Projects</h2>
+      <div className="projects-container">
+        <div className="ironsocial">
+          <h3>IronSocial</h3>
+          <img
+          className="site-logos"
+          src={is}
+        />
+          <p>
+            IronSocial is a social media application built with React, Express,
+            and MongoDB, modeled after LinkedIn, designed specifically for
+            IronHackers to collaborate and network. The platform allows
+            IronHackers to post about their current employment, share job
+            opportunities, and offer tips on job hunting, interviews, and related
+            topics. The app aims to foster a deeper sense of community among
+            IronHackers, enabling them to connect and support each other's career
+            goals.
+          </p>
+        </div>
+        <div className="revate">
         <h3>Revate</h3>
+        <img
+          className="site-logos"
+          src={rev}
+        />
         <p>
           Revate is a restaurant review website built with Express, MongoDB,
           JavaScript, and Handlebars. It is similar to Yelp, but exclusively
@@ -85,7 +99,13 @@ const Home = () => {
           experiences by leaving reviews on restaurants they have visited, while
           owners can showcase their restaurants for review.
         </p>
+        </div>
+        <div className="alien-invasion">
         <h3>Alien Invasion</h3>
+        <img
+          className="site-logos"
+          src={alien}
+        />
         <p>
           "Alien Invasion" is a space shooter game, reminiscent of the classic
           arcade game "Galaga", that I independently developed using HTML,
@@ -93,6 +113,7 @@ const Home = () => {
           to create a game with similar gameplay mechanics and thus brought
           "Alien Invasion" to life.
         </p>
+        </div>
       </div>
       <div className="contact">
         <h2>Contact Me</h2>
