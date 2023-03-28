@@ -3,6 +3,9 @@ import me from '../images/me.png'
 import is from '../images/is.png'
 import rev from '../images/rev.png'
 import alien from '../images/alien.png'
+import ironsocial from '../images/iron-social.JPG'
+import revate from '../images/revate.JPG'
+import alieninvasion from '../images/alien-invasion.JPG'
 
 const Typewriter = ({ text, loop }) => {
   const [currentText, setCurrentText] = useState("");
@@ -47,7 +50,7 @@ const Home = () => {
           className="email-logo"
           src="https://cdn-icons-png.flaticon.com/512/6244/6244438.png"
         />
-        <p>
+        <p className="hero-p">
           I'm a life-long learner based in Miami, Florida. I love creating
           beautiful interfaces, web apps, and everything in between!
         </p>
@@ -70,6 +73,7 @@ const Home = () => {
             <li>Bootstrap</li>
             <li>Git</li>
             <li>GitHub</li>
+            <li>Cloudinary</li>
             <li>NPM</li>
           </ul>  
         <h3>I love building stuff 📱</h3>
@@ -82,14 +86,27 @@ const Home = () => {
         <p className="resume">Click here to download my resume</p>
         </div> 
       </div>
-      <div className="projects-container" id="projects">
-        <h2 className="featured-projects">Featured Projects</h2>
+        <h2 className="featured-projects" id="projects">Featured Projects</h2>
+      <div className="projects-container">
         <div className="ironsocial">
           <h3>IronSocial</h3>
-          <img
+          <ul className="project-skills">
+            <li>React</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>CSS</li>
+            <li>Node.js</li>
+            <li>Flexbox</li>
+            <li>Cloudinary</li>
+          </ul>  
+          <div className="logo-container">
+        <img
           className="site-logos"
           src={is}
         />
+        </div>
+          <button>View project</button>
+          <img className="screenshots" src={ironsocial} alt="screenshot"/>
           <p>
             IronSocial is a social media application built with React, Express,
             and MongoDB, modeled after LinkedIn, designed specifically for
@@ -103,10 +120,25 @@ const Home = () => {
         </div>
         <div className="revate">
         <h3>Revate</h3>
+        <ul className="project-skills">
+            <li>Javascript</li>
+            <li>Handlebars</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>CSS</li>
+            <li>Node.js</li>
+            <li>HTML</li>
+            <li>Flexbox</li>
+            <li>Cloudinary</li>
+          </ul>  
+          <div className="logo-container">
         <img
           className="site-logos"
           src={rev}
         />
+        </div>
+          <button>View project</button>
+          <img className="screenshots" src={revate} alt="screenshot"/>
         <p>
           Revate is a restaurant review website built with Express, MongoDB,
           JavaScript, and Handlebars. It is similar to Yelp, but exclusively
@@ -117,10 +149,20 @@ const Home = () => {
         </div>
         <div className="alien-invasion">
         <h3>Alien Invasion</h3>
+        <ul className="project-skills">
+            <li>HTML</li>
+            <li>Canvas</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>  
+          <div className="logo-container">
         <img
           className="site-logos"
           src={alien}
         />
+        </div>
+          <button>View project</button>
+          <img className="screenshots" src={alieninvasion} alt="screenshot"/>
         <p>
           "Alien Invasion" is a space shooter game, reminiscent of the classic
           arcade game "Galaga", that I independently developed using HTML,

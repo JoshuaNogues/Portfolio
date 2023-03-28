@@ -70,6 +70,10 @@ code {
   padding: 0px 5px;
 }
 
+.hero-p {
+  width: 30%;
+}
+
 .site-logos {
   width: 200px;
 }
@@ -81,6 +85,11 @@ code {
 
 h2 {
   font-size: 2.5rem ;
+}
+
+.ironsocial > h3, .revate > h3, .alien-invasion > h3 {
+  font-size: 2rem;
+  text-decoration: underline 5px #f44336;
 }
 
 p {
@@ -104,7 +113,7 @@ p {
   padding-left: 0%;
 }
 
-.skills > li {
+.skills > li, .project-skills > li {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1;
@@ -116,6 +125,12 @@ p {
   /* border-radius: 3px; */
 }
 
+.project-skills {
+  padding: 0px;
+  margin: 0px;
+  width: 50%;
+}
+
 .resume {
   color: #f44336;
   font-weight: bold;
@@ -124,6 +139,7 @@ p {
 .featured-projects {
   display: flex;
   justify-content: flex-start;
+  margin: 0vh 30vw
 }
 
 .projects-container {
@@ -132,6 +148,40 @@ p {
   align-items: flex-start;
   margin: 0vh 30vw;
 }
+
+.screenshots {
+  width: 400px;
+  border-radius: 10%;
+  transition: box-shadow 0.3s ease-in-out; /* Add a transition effect for a smoother animation */
+}
+
+.screenshots:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow on hover */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ironsocial, .revate, .alien-invasion {
+  width: 25vw;
+}
+
 
 .contact {
   display: flex;
