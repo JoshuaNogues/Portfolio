@@ -102,7 +102,7 @@ p {
 .about-container {
   display: flex;
   /* align-items: center; */
-  padding: 1.2rem 30vw;
+  padding: 1.2rem;
   justify-content: center;
   /* background-color: #f44336; */
 }
@@ -115,7 +115,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  max-width: 1100px;
+  max-width: 770px;
 }
 
 .skills {
@@ -149,10 +149,23 @@ a {
   font-weight: bold;
 }
 
+.featured-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  justify-content: center;
+  max-width: 1006px;
+  /* background-color: #f44336; */
+}
+
+.center-projects {
+  display: flex;
+  justify-content: center;
+}
+
 .featured-projects {
   display: flex;
   justify-content: flex-start;
-  margin: 0vh 30vw;
   padding: 1.2rem 0rem;
   text-decoration: underline 5px #f44336
 }
@@ -161,7 +174,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0vh 30vw;
 }
 
 .screenshots {

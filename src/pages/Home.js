@@ -97,6 +97,8 @@ const Home = () => {
 
         </div> 
       </div>
+      <div className="center-projects">
+      <div className="featured-container">
         <h2 className="featured-projects" id="projects">Featured Projects</h2>
       <div className="projects-container">
         <div className="ironsocial">
@@ -199,6 +201,8 @@ const Home = () => {
         <img className="screenshots" src={alieninvasion} alt="screenshot"/>
         </div>
         </div>
+      </div>
+      </div>
       </div>
       <div className="contact-container">
       <div className="contact" id="contact">
