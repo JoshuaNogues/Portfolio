@@ -7,6 +7,7 @@ import ironsocial from '../images/iron-social.JPG'
 import revate from '../images/revate.JPG'
 import alieninvasion from '../images/alien-invasion.JPG'
 import resume from '../files/resume.pdf'
+import { Link } from "react-scroll";
 
 const Typewriter = ({ text, loop }) => {
   const [currentText, setCurrentText] = useState("");
@@ -84,12 +85,18 @@ const Home = () => {
             <li>NPM</li>
             <li>Canva</li>
             <li>Design</li>
+            <li>Teamwork</li>
+            <li>Communication</li>
+            <li>De-bugging</li>
+            <li>Problem Solving</li>
+            <li>Critical Thinking</li>
+            <li>Determination</li>
           </ul>  
         <h3>I love building stuff 📱</h3>
         <p>
           I started playing with computers at a very young age. Since then I
           have been experimenting with all sorts of technologies that in some way or
-          another led me to work on software engineering. Including photography, music, design, 2d games and more!
+          another led me to work on software engineering. Including photography, music, design, photoshop and more!
         </p>
         <a href={resume} download>
   <p className="resume">Click here to download my resume</p>
@@ -206,40 +213,41 @@ const Home = () => {
       </div>
       <div className="contact-container">
       <div className="contact" id="contact">
-        <h2>Contact Me</h2>
+        <h2>Let's get in touch</h2>
         <h3>joshuanogues@outlook.com</h3>
         <a href="mailto:joshuanogues@outlook.com">
-  <button>Get in touch</button>
+  <button>Contact</button>
 </a>
-
       </div>
       </div>
-      <div className="footer-container">
-      <div className="footer">
-        <h3>Joshua Nogues</h3>
-        <p>© 2023, Built and designed by Joshua Nogues</p>
-      </div>
-        <div className="logos-footer">
-        <a href="https://github.com/JoshuaNogues" target="_blank">
-      <img
-          className="github-logo"
+      <div class="center-footer">
+  <div class="footer-container">
+    <div class="footer">
+      <h3>Joshua Nogues</h3>
+      <p>© 2023, Built and designed by Joshua Nogues</p>
+    </div>
+    <div class="logos-footer">
+      <a href="https://github.com/JoshuaNogues" target="_blank">
+        <img
+          class="github-logo"
           src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
         />
-        </a>
-        <a href="https://www.linkedin.com/in/joshua-nogues/" target="_blank">
+      </a>
+      <a href="https://www.linkedin.com/in/joshua-nogues/" target="_blank">
         <img
-          className="linkedin-logo"
+          class="linkedin-logo"
           src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png"
         />
-        </a>
-        <a href="mailto:joshuanogues@outlook.com">
+      </a>
+      <a href="mailto:joshuanogues@outlook.com">
         <img
-          className="email-logo"
+          class="email-logo"
           src="https://cdn-icons-png.flaticon.com/512/6244/6244438.png"
         />
-        </a>
-        </div>
-      </div>
+      </a>
+    </div>
+  </div>
+</div>
     </div>
   );
 };

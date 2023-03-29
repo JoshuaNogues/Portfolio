@@ -237,7 +237,7 @@ button {
 .contact {
   display: flex;
   align-items: flex-start;
-  padding: 1.2rem 30vw;
+  margin-bottom: 60px;
   flex-direction: column;
 }
 
@@ -257,17 +257,24 @@ button {
 .footer-container {
   display: flex;
   flex-direction: row;
-  background-color: #20B2AA;
+  /* background-color: #20B2AA; */
   align-items: center;
+  width: 1006px;
+  justify-content: space-between;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  /* background-color: #20B2AA; */
+}
+
+.center-footer {
+  display: flex;
   justify-content: center;
   background-color: #20B2AA;
-  align-items: flex-start;
-  padding: 1.2rem 20vw 1.2rem 30vw;
 }
 
 .logos-footer {
