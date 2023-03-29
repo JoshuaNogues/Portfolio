@@ -6,6 +6,7 @@ import alien from '../images/alien.png'
 import ironsocial from '../images/iron-social.JPG'
 import revate from '../images/revate.JPG'
 import alieninvasion from '../images/alien-invasion.JPG'
+import resume from '../files/resume.pdf'
 
 const Typewriter = ({ text, loop }) => {
   const [currentText, setCurrentText] = useState("");
@@ -38,18 +39,24 @@ const Home = () => {
       <div className="hero-section">
         <Typewriter text="Welcome to my Portfolio"/>
         <h1 className="hiImJosh">Hi, I'm Josh | Software Engineer</h1>
-        <img
+        <a href="https://github.com/JoshuaNogues" target="_blank">
+      <img
           className="github-logo"
           src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
         />
+        </a>
+        <a href="https://www.linkedin.com/in/joshua-nogues/" target="_blank">
         <img
           className="linkedin-logo"
           src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png"
         />
+        </a>
+        <a href="mailto:joshuanogues@outlook.com">
         <img
           className="email-logo"
           src="https://cdn-icons-png.flaticon.com/512/6244/6244438.png"
         />
+        </a>
         <p className="hero-p">
           I'm a life-long learner based in Miami, Florida. I love creating
           beautiful interfaces, web apps, and everything in between!
@@ -82,10 +89,12 @@ const Home = () => {
         <p>
           I started playing with computers at a very young age. Since then I
           have been experimenting with all sorts of technologies that in some way or
-          another led me to work on software engineering. Including photography, music, sound
-          engineering, 2d games and more!
+          another led me to work on software engineering. Including photography, music, design, 2d games and more!
         </p>
-        <p className="resume">Click here to download my resume</p>
+        <a href={resume} download>
+  <p className="resume">Click here to download my resume</p>
+</a>
+
         </div> 
       </div>
         <h2 className="featured-projects" id="projects">Featured Projects</h2>
@@ -109,8 +118,7 @@ const Home = () => {
             <li>Cloudinary</li>
           </ul>  
           <p>
-            IronSocial is a social media application built with React, Express,
-            and MongoDB, modeled after LinkedIn, designed specifically for
+            IronSocial is an independently developed social media application modeled after LinkedIn, designed specifically for
             IronHackers to collaborate and network. The platform allows
             IronHackers to post about their current employment, share job
             opportunities, and offer tips on job hunting, interviews, and related
@@ -118,7 +126,10 @@ const Home = () => {
             IronHackers, enabling them to connect and support each other's career
             goals.
           </p>
-          <button>View project</button>
+          <a href="https://ironsocial.netlify.app/" target="_blank">
+  <button className="project-link">View project</button>
+</a>
+
           </div>
         <div className="preview">
         <img className="screenshots" src={ironsocial} alt="screenshot"/>
@@ -145,13 +156,14 @@ const Home = () => {
             <li>Cloudinary</li>
           </ul>  
           <p>
-          Revate is a restaurant review website built with Express, MongoDB,
-          JavaScript, and Handlebars. It is similar to Yelp, but exclusively
+          Revate is a restaurant review website similar to Yelp, but exclusively
           focuses on dining establishments. Here, patrons can share their
           experiences by leaving reviews on restaurants they have visited, while
           owners can showcase their restaurants for review.
           </p>
-          <button>View project</button>
+          <a href="https://revate.fly.dev/" target="_blank">
+  <button className="project-link">View project</button>
+</a>
           </div>
         <div className="preview">
         <img className="screenshots" src={revate} alt="screenshot"/>
@@ -179,30 +191,50 @@ const Home = () => {
           to create a game with similar gameplay mechanics and thus brought
           "Alien Invasion" to life.
           </p>
-          <button>View project</button>
+          <a href="https://joshuanogues.github.io/Alien-Invasion-Game/" target="_blank">
+  <button className="project-link">View project</button>
+</a>
           </div>
         <div className="preview">
         <img className="screenshots" src={alieninvasion} alt="screenshot"/>
         </div>
         </div>
       </div>
+      <div className="contact-container">
       <div className="contact" id="contact">
         <h2>Contact Me</h2>
-        <p>joshuanogues@outlook.com</p>
+        <h3>joshuanogues@outlook.com</h3>
+        <a href="mailto:joshuanogues@outlook.com">
+  <button>Get in touch</button>
+</a>
+
       </div>
+      </div>
+      <div className="footer-container">
       <div className="footer">
+        <h3>Joshua Nogues</h3>
+        <p>© 2023, Built and designed by Joshua Nogues</p>
+      </div>
+        <div className="logos-footer">
+        <a href="https://github.com/JoshuaNogues" target="_blank">
       <img
           className="github-logo"
           src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
         />
+        </a>
+        <a href="https://www.linkedin.com/in/joshua-nogues/" target="_blank">
         <img
           className="linkedin-logo"
           src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png"
         />
+        </a>
+        <a href="mailto:joshuanogues@outlook.com">
         <img
           className="email-logo"
           src="https://cdn-icons-png.flaticon.com/512/6244/6244438.png"
         />
+        </a>
+        </div>
       </div>
     </div>
   );
