@@ -75,6 +75,8 @@ const Home = () => {
             <li>GitHub</li>
             <li>Cloudinary</li>
             <li>NPM</li>
+            <li>Canva</li>
+            <li>Design</li>
           </ul>  
         <h3>I love building stuff 📱</h3>
         <p>
@@ -89,7 +91,14 @@ const Home = () => {
         <h2 className="featured-projects" id="projects">Featured Projects</h2>
       <div className="projects-container">
         <div className="ironsocial">
+          <div className="information">
+          <div className="logo-title">
           <h3>IronSocial</h3>
+          <img
+          className="site-logos"
+          src={is}
+        />
+        </div>
           <ul className="project-skills">
             <li>React</li>
             <li>Express</li>
@@ -99,14 +108,6 @@ const Home = () => {
             <li>Flexbox</li>
             <li>Cloudinary</li>
           </ul>  
-          <div className="logo-container">
-        <img
-          className="site-logos"
-          src={is}
-        />
-        </div>
-          <button>View project</button>
-          <img className="screenshots" src={ironsocial} alt="screenshot"/>
           <p>
             IronSocial is a social media application built with React, Express,
             and MongoDB, modeled after LinkedIn, designed specifically for
@@ -117,11 +118,23 @@ const Home = () => {
             IronHackers, enabling them to connect and support each other's career
             goals.
           </p>
+          <button>View project</button>
+          </div>
+        <div className="preview">
+        <img className="screenshots" src={ironsocial} alt="screenshot"/>
         </div>
-        <div className="revate">
-        <h3>Revate</h3>
-        <ul className="project-skills">
-            <li>Javascript</li>
+        </div>
+        <div className="ironsocial">
+          <div className="information">
+          <div className="logo-title">
+          <h3>Revate</h3>
+          <img
+          className="site-logos"
+          src={rev}
+        />
+        </div>
+          <ul className="project-skills">
+          <li>Javascript</li>
             <li>Handlebars</li>
             <li>Express</li>
             <li>MongoDB</li>
@@ -131,45 +144,46 @@ const Home = () => {
             <li>Flexbox</li>
             <li>Cloudinary</li>
           </ul>  
-          <div className="logo-container">
-        <img
-          className="site-logos"
-          src={rev}
-        />
-        </div>
-          <button>View project</button>
-          <img className="screenshots" src={revate} alt="screenshot"/>
-        <p>
+          <p>
           Revate is a restaurant review website built with Express, MongoDB,
           JavaScript, and Handlebars. It is similar to Yelp, but exclusively
           focuses on dining establishments. Here, patrons can share their
           experiences by leaving reviews on restaurants they have visited, while
           owners can showcase their restaurants for review.
-        </p>
+          </p>
+          <button>View project</button>
+          </div>
+        <div className="preview">
+        <img className="screenshots" src={revate} alt="screenshot"/>
         </div>
-        <div className="alien-invasion">
-        <h3>Alien Invasion</h3>
-        <ul className="project-skills">
-            <li>HTML</li>
-            <li>Canvas</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>  
-          <div className="logo-container">
-        <img
+        </div>
+        <div className="ironsocial">
+          <div className="information">
+          <div className="logo-title">
+          <h3>Alien Invasion</h3>
+          <img
           className="site-logos"
           src={alien}
         />
         </div>
-          <button>View project</button>
-          <img className="screenshots" src={alieninvasion} alt="screenshot"/>
-        <p>
+          <ul className="project-skills">
+          <li>HTML</li>
+            <li>Canvas</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>  
+          <p>
           "Alien Invasion" is a space shooter game, reminiscent of the classic
           arcade game "Galaga", that I independently developed using HTML,
           Canvas, and Javascript. As a childhood fan of "Galaga", I was inspired
           to create a game with similar gameplay mechanics and thus brought
           "Alien Invasion" to life.
-        </p>
+          </p>
+          <button>View project</button>
+          </div>
+        <div className="preview">
+        <img className="screenshots" src={alieninvasion} alt="screenshot"/>
+        </div>
         </div>
       </div>
       <div className="contact" id="contact">
