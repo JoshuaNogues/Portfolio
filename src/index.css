@@ -282,3 +282,53 @@ button {
   flex-direction: row;
   height: 25px;
 }
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .hiImJosh {
+    font-size: 2.5rem;
+  }
+  .hero-p {
+    width: 350px;
+  }
+  .about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-and-image {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .me {
+    width: 230px;
+    margin-right: 0px;
+  }
+  .featured-container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+  .information {
+    width: 93%;
+  }
+  .information > p{
+    width: 93%;
+  }
+  .project-skills {
+    width: 93%;
+  }
+  .ironsocial {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+  }
+  .screenshots {
+    width: 350px;
+    margin-top: 50px;
+  }
+}
