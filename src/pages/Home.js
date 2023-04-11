@@ -81,6 +81,7 @@ const Home = () => {
             <li>Bootstrap</li>
             <li>Git</li>
             <li>GitHub</li>
+            <li>Wordpress</li>
             <li>Cloudinary</li>
             <li>NPM</li>
             <li>Canva</li>
