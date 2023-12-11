@@ -50,6 +50,7 @@ code {
   text-decoration: none;
   margin-right: 10px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .navbar-link:hover {
