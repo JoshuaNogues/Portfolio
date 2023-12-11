@@ -7,7 +7,6 @@ import ironsocial from '../images/iron-social.JPG'
 import revate from '../images/revate.JPG'
 import alieninvasion from '../images/alien-invasion.JPG'
 import resume from '../files/resume.pdf'
-import { Link } from "react-scroll";
 
 const Typewriter = ({ text, loop }) => {
   const [currentText, setCurrentText] = useState("");
@@ -82,6 +81,7 @@ const Home = () => {
             <li>Git</li>
             <li>GitHub</li>
             <li>Wordpress</li>
+            <li>Elementor</li>
             <li>Cloudinary</li>
             <li>NPM</li>
             <li>Canva</li>
